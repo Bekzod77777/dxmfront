@@ -1,0 +1,91 @@
+.v-card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.v-card__text {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.info-text-strong {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.full-wide-mobile {
+  width: 100%;
+  padding: 8px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.v-btn {
+  margin-top: 16px;
+}
+
+.v-btn--disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.fields-wrapper {
+  margin-bottom: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1976d2;
+}
+
+.error--text {
+  color: red;
+}
+
+.v-messages__message {
+  font-size: 12px;
+  color: red;
+}
+
+/* Style for the button in its normal state */
+#contactStepCreateAppointmentButton {
+  background-color: #007bff; /* A blue background color */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding for the button */
+  font-size: 16px; /* Button text size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor when hovering */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Disabled button state */
+#contactStepCreateAppointmentButton:disabled {
+  background-color: #ccc; /* Light grey background when disabled */
+  cursor: not-allowed; /* Not-allowed cursor when disabled */
+}
+
+/* Hover state for the button */
+#contactStepCreateAppointmentButton:not(:disabled):hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Focus state for keyboard navigation */
+#contactStepCreateAppointmentButton:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.5); /* Add a blue focus shadow */
+}

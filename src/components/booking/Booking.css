@@ -1,0 +1,193 @@
+/* General container styling */
+.booking-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f0f0f0; /* Updated background for a cleaner look */
+}
+
+/* Booking section */
+.booking {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for depth */
+}
+
+/* Heading */
+.booking h1 {
+  font-size: 26px; /* Slightly larger font for better readability */
+  color: #222; /* Darker text for more contrast */
+  text-align: center;
+  margin-bottom: 25px; /* Increased space for better separation */
+  font-weight: bold;
+}
+
+/* Expansion panel */
+.v-expansion-panel {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc; /* Lighter border for a subtle effect */
+  border-radius: 6px; /* Increased rounding for smoother edges */
+  overflow: hidden;
+}
+
+/* Expansion panel header */
+.v-expansion-panel__header {
+  background-color: #fafafa; /* Lighter background for header */
+  padding: 16px; /* Increased padding for better click area */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+.v-expansion-panel__header:hover {
+  background-color: #f0f0f0; /* Slight hover effect */
+}
+
+/* Flex container */
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/* Process number */
+.process-number {
+  width: 35px; /* Larger circle for better visibility */
+  height: 35px;
+  background-color: #eaff2f;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+/* Step name */
+.process-step-name {
+  font-size: 17px; /* Increased size for better readability */
+  font-weight: 600; /* Slightly bolder */
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Icon */
+.v-expansion-panel__header__icon i {
+  font-size: 24px;
+  color: #444; /* Slightly darker color */
+  transition: transform 0.2s ease-in-out; /* Smooth icon rotation */
+}
+
+.v-expansion-panel__header__icon i.rotate {
+  transform: rotate(180deg); /* Rotate icon when accordion is open */
+}
+
+/* Expansion panel body */
+.v-expansion-panel__body {
+  padding: 16px; /* Increased padding for more space */
+  background-color: #fff;
+  border-top: 1px solid #ddd; /* Border to separate header from body */
+}
+
+/* Info text */
+.info-text {
+  font-size: 14px;
+  color: #777; /* Lighter text for information */
+  margin-bottom: 12px; /* Slightly increased margin */
+  line-height: 1.5; /* Improved readability */
+}
+
+/* Branch list */
+.branch-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Increased gap for more space between items */
+}
+
+/* Branch expansion panel */
+.region-expansion-panel {
+  border-radius: 6px;
+}
+
+.v-input {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 6px;
+  background-color: #fafafa; /* Lighter background for branch items */
+  transition: background-color 0.2s ease-in-out;
+  margin-bottom: 12px;
+}
+
+.v-input:hover {
+  background-color: #f0f0f0; /* Hover effect for branch items */
+}
+
+/* Radio group */
+.v-input__slot {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between radio buttons */
+}
+
+/* Radio button styling */
+.v-radio {
+  display: flex;
+  align-items: center;
+}
+
+.v-radio input[type="radio"] {
+  margin-right: 12px; /* Increased margin for spacing */
+}
+
+.v-radio label {
+  cursor: pointer; /* Add pointer to labels for accessibility */
+  font-size: 15px; /* Slightly larger font */
+  color: #444;
+}
+
+/* Branch address */
+.branch-address {
+  font-size: 13px;
+  color: #666; /* Gray color for addresses */
+  margin-top: 5px; /* Space above address */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .booking-container {
+    padding: 10px;
+  }
+
+  .booking {
+    padding: 15px;
+  }
+
+  .v-expansion-panel__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .process-number {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+  }
+
+  .process-step-name {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .v-expansion-panel__header__icon i {
+    margin-top: 10px;
+  }
+}
